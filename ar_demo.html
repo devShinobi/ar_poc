@@ -1,0 +1,12 @@
+<!-- AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
+<script src="aframe.min.js"></script>
+<script src="aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded arjs='sourceType: webcam;patternRatio: 0.9;'>
+		<a-plane position="0 -0.1 0" rotation="-90 0 0" material='opacity: 0.5;' color="#7BC8A4"></a-plane>
+		<!-- <a-box position='0 0.5 0' material='opacity: 0.5;'>		 -->
+		<!-- </a-box>				 -->
+		<a-text value="Hello, A-Frame!" color="#111" position="0 1 -2" align="center" rotation="" scale="" visible="" text=""></a-text>
+		<a-marker-camera preset='custom'  type='pattern' url='patt_color.patt'></a-marker-camera>
+	</a-scene>
+</body>
